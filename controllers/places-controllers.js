@@ -14,7 +14,8 @@ const getPlaceById = async (req, res, next) => {
   let place;
   try {
     place = await Place.findById(placeId);
-  } catch (err) {
+  } 
+  catch (err) {
     const error = new HttpError(
       'Something went wrong, could not find a place.',
       500
@@ -120,6 +121,7 @@ const createPlace = async (req, res, next) => {
 };
 
 const updatePlace = async (req, res, next) => {
+  console.log("update");
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
     return next(
