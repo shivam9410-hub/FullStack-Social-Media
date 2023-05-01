@@ -1,8 +1,8 @@
 {
     "env":{
         "DB_USER":"khantwal",
-        "DB_PASSWORD":"shivamkumar",
-        "DB_NAME":"mern",
+        "DB_PASSWORD":"acdefgh",
+        "DB_NAME":"miniproject",
         "JWT_KEY":"supersecret_dont_share"
     }
 }
